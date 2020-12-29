@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        VStack{
+            Text("Movie List")
+                .font(.largeTitle)
         List{
             
         
@@ -16,6 +19,7 @@ struct ContentView: View {
             MovieRow(movieName: "Toy Story", movieChar: ["Woody, Buzz, Jessie"])
             MovieRow(movieName: "Skyscraper", movieChar: ["Dwayne, Neve, Chin Han"])
 
+        }
         }
     }
 }
