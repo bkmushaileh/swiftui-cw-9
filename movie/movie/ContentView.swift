@@ -9,17 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            Text("Movie List")
-                .font(.largeTitle)
-        List{
+        NavigationView{
             
-        
-            MovieRow(movieName: "Lion King", movieChar: ["Simba , Scar , Nala"])
-            MovieRow(movieName: "Toy Story", movieChar: ["Woody, Buzz, Jessie"])
-            MovieRow(movieName: "Skyscraper", movieChar: ["Dwayne, Neve, Chin Han"])
-
-        }
+            List{
+                
+                NavigationLink(
+                    destination: Image("Lion King"),
+                    label: {
+                        MovieRow(movieName: "Lion King", movieChar: ["Simba , Scar , Nala"])                    })
+                    
+                NavigationLink(
+                    destination: Image("Toy Story"),
+                    label: {
+                        MovieRow(movieName: "Toy Story", movieChar: ["Woody, Buzz, Jessie"])
+                        
+                    })
+                    NavigationLink(
+                        destination: Image("Skyscraper"),
+                        label: {
+                MovieRow(movieName: "Skyscraper", movieChar: ["Dwayne, Neve, Chin Han"])
+                        })
+                
+            }.navigationBarTitle("Movies")
         }
     }
 }
