@@ -11,6 +11,7 @@
 		78B38EBC259BB0FB00A0356C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B38EBB259BB0FB00A0356C /* ContentView.swift */; };
 		78B38EBE259BB10100A0356C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B38EBD259BB10100A0356C /* Assets.xcassets */; };
 		78B38EC1259BB10100A0356C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B38EC0259BB10100A0356C /* Preview Assets.xcassets */; };
+		78F539D325A2785300FEC89F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F539D225A2785300FEC89F /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		78B38EBD259BB10100A0356C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B38EC0259BB10100A0356C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78B38EC2259BB10100A0356C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F539D225A2785300FEC89F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				78B38EB9259BB0FB00A0356C /* movieApp.swift */,
 				78B38EBB259BB0FB00A0356C /* ContentView.swift */,
+				78F539D225A2785300FEC89F /* MovieDetailView.swift */,
 				78B38EBD259BB10100A0356C /* Assets.xcassets */,
 				78B38EC2259BB10100A0356C /* Info.plist */,
 				78B38EBF259BB10100A0356C /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F539D325A2785300FEC89F /* MovieDetailView.swift in Sources */,
 				78B38EBC259BB0FB00A0356C /* ContentView.swift in Sources */,
 				78B38EBA259BB0FB00A0356C /* movieApp.swift in Sources */,
 			);

@@ -14,18 +14,18 @@ struct ContentView: View {
             List{
                 
                 NavigationLink(
-                    destination: Image("Lion King"),
+                    destination: MovieDetailView(movieName: "Lion King", movieChar: ["Simba , Scar , Nala"]),
                     label: {
                         MovieRow(movieName: "Lion King", movieChar: ["Simba , Scar , Nala"])                    })
                     
                 NavigationLink(
-                    destination: Image("Toy Story"),
+                    destination: MovieDetailView(movieName: "Toy Story", movieChar: ["Woody, Buzz, Jessie"]),
                     label: {
                         MovieRow(movieName: "Toy Story", movieChar: ["Woody, Buzz, Jessie"])
                         
                     })
                     NavigationLink(
-                        destination: Image("Skyscraper"),
+                        destination: MovieDetailView(movieName: "Skyscraper", movieChar: ["Dwayne, Neve, Chin Han"]),
                         label: {
                 MovieRow(movieName: "Skyscraper", movieChar: ["Dwayne, Neve, Chin Han"])
                         })
