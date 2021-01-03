@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name: String = ""
     var body: some View {
         NavigationView{
             
             List{
                 
                 NavigationLink(
-                    destination: MovieDetailView(movie: Movie(name: "Lion King", characters:["Simba , Scar , Nala"])),
+                    destination: MovieDetailView(movie: movies[0]),
                     label: {
-                        MovieRow(movie: Movie( name: "Lion King", characters: ["Simba , Scar , Nala"]))})
+                        MovieRow(movie: movies[0])
+                        })
+                        
+                  
                         
                 NavigationLink(
-                    destination: MovieDetailView(movie: Movie( name: "Toy Story", characters:["Woody, Buzz, Jessie"])),
+                    destination: MovieDetailView(movie: movies[1]),
                     label: {
-                        MovieRow(movie: Movie( name: "Toy Story", characters:["Woody, Buzz, Jessie"]))})
+                        MovieRow(movie: movies[1])})
                      
                    
                     NavigationLink(
-                        destination:MovieDetailView(movie: Movie( name: "Skyscraper", characters:["Dwayne, Neve, Chin Han"])),
+                        destination:MovieDetailView(movie: movies[2]),
                         label: {
-                            MovieRow(movie: Movie( name: "Skyscraper", characters:["Dwayne, Neve, Chin Han"]))})
+                            MovieRow(movie: movies[2])
+                            
+                        })
           
                 
             }.navigationBarTitle("Movies")
