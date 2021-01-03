@@ -12,6 +12,7 @@
 		78B38EBE259BB10100A0356C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B38EBD259BB10100A0356C /* Assets.xcassets */; };
 		78B38EC1259BB10100A0356C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B38EC0259BB10100A0356C /* Preview Assets.xcassets */; };
 		78F539D325A2785300FEC89F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F539D225A2785300FEC89F /* MovieDetailView.swift */; };
+		78F539D925A2828900FEC89F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F539D825A2828900FEC89F /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		78B38EC0259BB10100A0356C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78B38EC2259BB10100A0356C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F539D225A2785300FEC89F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		78F539D825A2828900FEC89F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		78B38EAD259BB0FB00A0356C = {
 			isa = PBXGroup;
 			children = (
+				78F539D725A2827100FEC89F /* Models */,
 				78B38EB8259BB0FB00A0356C /* movie */,
 				78B38EB7259BB0FB00A0356C /* Products */,
 			);
@@ -70,6 +73,14 @@
 				78B38EC0259BB10100A0356C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78F539D725A2827100FEC89F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78F539D825A2828900FEC89F /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			files = (
 				78F539D325A2785300FEC89F /* MovieDetailView.swift in Sources */,
 				78B38EBC259BB0FB00A0356C /* ContentView.swift in Sources */,
+				78F539D925A2828900FEC89F /* Movie.swift in Sources */,
 				78B38EBA259BB0FB00A0356C /* movieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
