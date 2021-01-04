@@ -1,6 +1,10 @@
-struct Movie {
+
+import Foundation
+
+struct Movie : Identifiable {
     let name: String
     let characters: [String]
+    let id = UUID()
 }
 
 let movies = [

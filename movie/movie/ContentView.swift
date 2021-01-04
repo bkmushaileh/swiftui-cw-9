@@ -11,30 +11,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             
-            List{
+            List(movies){ movie in
                 
                 NavigationLink(
-                    destination: MovieDetailView(movie: movies[0]),
+                    destination: MovieDetailView(movie: movie),
                     label: {
-                        MovieRow(movie: movies[0])
+                        MovieRow(movie: movie)
                         })
-                        
-                  
-                        
-                NavigationLink(
-                    destination: MovieDetailView(movie: movies[1]),
-                    label: {
-                        MovieRow(movie: movies[1])})
-                     
-                   
-                    NavigationLink(
-                        destination:MovieDetailView(movie: movies[2]),
-                        label: {
-                            MovieRow(movie: movies[2])
-                            
-                        })
-          
-                
+
             }.navigationBarTitle("Movies")
         }
     }
